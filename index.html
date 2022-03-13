@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <title>Онлайн-калькулятор ИБП - рассчитай стоимость оборудования</title>
+</head>
+<body>
+  <header class="header">
+    <div class="_container">
+      <div class="header__top">
+        <div class="header__logo"><img src="images/quiz/logo.png" alt="logo"></div>
+        <div class="header__phone">
+          <img src="images/quiz/phone.svg" alt="telephone">
+          <a href="tel:+79202534982">+7 (920) 253 49-82</a>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="header__body">
+          <div class="header__info">
+            <div class="header__title">Рассчитай стоимость системы ибп</div>
+            <div class="header__subtitle">Подбери оптимальную комбинацию ИБП + проводки + ёмкости энергии (АКБ)</div>
+            <div class="header__desc">Результат за 1 минуту</div>
+            <div class="header__buttons">
+              <div class="header__button_one">Калькулятор online<span class="flare"></span></div>
+            </div>
+          </div>
+          <div class="header__img"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="quiz__section">
+    <div class="_container">
+      <div class="quiz__container">
+        <div class="quiz__body">
+          <!-- <div class="quiz__title">Онлайн-подбор оптимальной комбинации ИБП + проводка + ёмкости энергии (АКБ)</div>
+          <div class="quiz__bg">
+            <div class="quiz__button">Рассчитать лучший вариант<span class="flare"></span></div>
+          </div> -->
+          <form class="quiz" method="POST"></form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="questions">
+    <div class="_container">
+      <div class="questions__container">
+        <div class="questions__body">
+          <div class="questions__title">Частые вопросы и лайфхаки</div>
+          <div class="questions__question">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                    Как выбрать резервную систему?
+                  </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ol>
+                      <li>Сначала рассчитайте мощность оборудования, которое хотите подстраховать. </li>
+                    </ol>
+                    <ul>
+                      Обязательно учтите 2 значения:
+                      <li>показатель мощности прибора.</li>
+                      <li>фактор нештатной обстановки (как часто происходят перебои, отключения и т.п.)</li>
+                    </ul>
+                    <ol start="2">
+                      <li>Определите желаемое время работы автономной системы до полной разрядки аккумулятора.</li>
+                      <li>Обратите внимание на время срабатывания ИБП, чтобы в работе выбранного оборудования не было серьезных сбоев.</li>
+                      <li>Немаловажны размеры системы и срок эксплуатации ее элементов, возможность стабилизации напряжения в сети, а также дополнительные факторы типа создаваемого шума и подобных.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    Чем ИБП лучше генератора?
+                  </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    ИБП превосходит генератор сразу по нескольким параметрам:
+                    <ol>
+                      <li>Экономичность обслуживания – работоспособность аккумулятора можно восстановить или заменить его по окончании срока эксплуатации.</li>
+                      <li>ИБП не такие шумные.</li>
+                      <li>Система бесперебойного питания проще в установке (монтаже) и легче настраивается под потребности пользователя.</li>
+                      <li>ИБП проще в управлении.</li>
+                    </ol>
+                    Отдельный случай – защита системы отопления (например, газового котла) посредством ИБП.
+                    <br>
+                    Тут к описанным выше «плюсам» прибавляется, то, что ИБП в таком случае обеспечивает:
+                    <ul>
+                      <li>один тип переменного напряжения и напряжение с требуемой частотой (благодаря интегрированному инвертору постоянное напряжение преобразуется в переменное и приобретает необходимые параметры и частоту).</li>
+                      <li>защиту от резких скачков напряжения.</li>
+                    </ul>
+                    И становится еще одним «питающим» устройством на экстренный случай.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                    Что учитывать при монтаже ИБП для газового котла?
+                  </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Во-первых, то, что аккумуляторная батарея (АБ) и ИБП должны быть отдалены от нагревательных аппаратов - чем выше температурные показатели в помещении, тем хуже работает бесперебойник.
+                    <br>
+                    Во-вторых, обязательно при монтаже заземлите установку и сохраняйте полярность. Дистанция от ИБП до котла должна быть минимальная.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    Как выбрать метод защиты ИБП
+                  </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Способ подключения и продолжительность работы – критерии, по которым принято делить бесперебойники на аварийные и автономные.
+                    <br>
+                    Но применить также можно и другую классификацию. Согласно ей ИБП бывают:  
+                    <ul>
+                      <li>онлайн.</li>
+                      <li>оффлайн.</li>
+                      <li>линейно-интерактивные.</li>
+                    </ul>
+                    А чем они отличаются и какой Вам больше подойдет – расскажут наши специалисты, если заполните форму выше.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading5">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                    Что забывает каждый второй, когда ставит ИБП
+                  </button>
+                </h2>
+                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Это, конечно же, тот факт, что при подборе ИБП его мощность в идеале должна на 25 % превышать мощность защищаемого оборудования.
+                    <br>
+                    Ведь при полном отключении света нам сложно полностью отказаться от гаджетов, связи и других привычных «чудес техники», а все они требуют питания, оказываясь разряженными в самый неподходящий момент.
+                    <br>
+                    Так что никогда не выбирайте систему, мощность которой точь-в-точь совпадает с мощностью приборов, которые хотите защитить, всегда делайте запас «на всякий пожарный».
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="_container">
+      <div class="footer__container">
+        <div class="footer__body">
+          <div class="footer__geo">
+            <a href="https://yandex.ru/maps/47/nizhny-novgorod/?ll=43.968355%2C56.325656&mode=routes&no-distribution=1&rtext=56.326885%2C44.005985~56.321616%2C43.930869&rtt=auto&ruri=~ymapsbm1%3A%2F%2Forg%3Foid%3D150449760396&source=wizbiz_new_map_single&z=14" target="_blank"><img src="images/quiz/geo.svg" alt="geo"></a>
+            <p>Московское шоссе, 31А</p>
+          </div>
+          <div class="footer__copy">© ООО ЦЭК 1992 - 2022</div>
+          <div class="footer__user-agreement"><a href="https://cek.ru/polzovatelskoe-soglashenie" target="_blank">Пользовательское соглашение</a></div>
+          <div class="footer__social">
+            <a href="https://t.me/CEK_greenenergy" target="_blank"><img src="images/quiz/telegram.svg" alt="telegram"></a>
+            <a href="viber://chat?number=799202534982" target="_blank"><img src="images/quiz/viber.svg" alt="viber"></a>
+            <a href="https://api.whatsapp.com/send/?phone=%2B79202534982&text=Готовы+ответить+%3A%29&app_absent=0" target="_blank"><img src="images/quiz/whatsapp.svg" alt="whatsapp"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="js/bootstrap.bundle.min.js"></script>
+     <script src="js/script.js"></script>
+     <script src="js/data.js"></script>
+     <script src="js/quiz.js"></script>
+    <!-- utm-метки для Битрикса -->
+    <script src="https://nalog.cek.ru/js/modal/cek_utm_adv.js" type='module'></script>
+</body>
+</html>
